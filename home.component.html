@@ -1,0 +1,16 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<div class="center-container">
+  <div class="container">
+    <img class="youtube-logo" src="assets/youtubeLogo.png" alt="YouTube Logo">
+  </div>
+  <div class="search-container">
+    <form (submit)="searchVideos()">
+      <input type="text" placeholder="Search videos..." [(ngModel)]="searchQuery" (keyup.enter)="searchVideos()" name="searchQuery">
+      <button type="submit" class="btn btn-secondary">
+        <i class="fas fa-search"></i> Search
+      </button>
+    </form>
+  </div>  
+</div>
